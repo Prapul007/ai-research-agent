@@ -116,10 +116,6 @@ ai-research-agent/
 4. Push to branch
 5. Open a Pull Request
 
-## 📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-
 ## 🙏 Acknowledgments
 - LangChain team for the framework
 - Tavily API for search capabilities
