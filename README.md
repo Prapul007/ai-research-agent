@@ -33,8 +33,7 @@ This project implements an advanced AI research system using a dual-agent archit
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/ai-research-agent.git
-cd ai-research-agent
+git clone https://github.com/Prapul007/ai-research-agent.git
 ```
 
 2. **Create and activate virtual environment**
