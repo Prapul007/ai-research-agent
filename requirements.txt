@@ -1,0 +1,13 @@
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-google-genai
+langgraph
+langgraph-api
+langgraph-checkpoint
+langgraph-cli
+langgraph-prebuilt
+langgraph-sdk
+langsmith
+streamlit
