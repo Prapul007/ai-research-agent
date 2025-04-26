@@ -22,7 +22,6 @@ class ResearchAgent:
         query = state.query
         tool = Tools(query=query)
         
-        print(f"Researching: {query}")
         # Use the Tavily tool to perform the research
         results = tool.run_tavily_search()
         

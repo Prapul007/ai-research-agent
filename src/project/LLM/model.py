@@ -8,6 +8,7 @@ load_dotenv()
 os.environ["GOOGLE_API_KEY"]=os.getenv("GOOGLE_API_KEY")
     
 class GoogleLLM:
+    """ LLM for the project. """
     def get_google(self):
         try:
             llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")

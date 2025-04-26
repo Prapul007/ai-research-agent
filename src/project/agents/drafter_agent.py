@@ -21,7 +21,6 @@ class DrafterAgent:
         query = state.query
         research_results = state.research_results
         
-        print(f"Drafting answer for: {query}")
         
         prompt = """
         You are an expert Answer Drafter responsible for creating comprehensive, accurate responses

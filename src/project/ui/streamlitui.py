@@ -10,9 +10,10 @@ def get_graph():
     return builder.agentic_system()
     
 class StreamlitUI:
+    """ Streamlit UI for the project."""
     def __init__(self):
         self.initialize_session_state()
-        self.graph = get_graph()  # ✅ correctly assigned here
+        self.graph = get_graph()  
         
     def initialize_session_state(self):
         if "query" not in st.session_state:
@@ -21,6 +22,7 @@ class StreamlitUI:
             st.session_state.current_node = "initialization"
 
     def display_ui(self):
+        """ Display the Streamlit UI. """
         query = st.text_area(
             "Enter your query:",
             value=st.session_state.query,
@@ -39,6 +41,7 @@ class StreamlitUI:
                 st.error(f"An error occurred: {e}")
         
     def handle_graphflow(self):
+        """ Handle the graph flow. """
         with st.spinner("Performing research..."):
             try:
                 initial_state = State(
@@ -50,7 +53,6 @@ class StreamlitUI:
                 result = self.graph.invoke(
                     initial_state.model_dump()
                 )
-                print(result)
             except Exception as e:
                 st.error(f"An error occurred: {e}")
                 return
